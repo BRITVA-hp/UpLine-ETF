@@ -1,0 +1,68 @@
+.main
+  background: url('../img/main/bg.jpg') no-repeat center/cover
+  position: relative
+  color: #FAFAFA
+  padding: 80px 20px
+  &::before
+    content: ''
+    position: absolute
+    z-index: 1
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    opacity: 0.65
+    background: #000D1A
+  &__container
+    position: relative
+    z-index: 2
+    max-width: 1520px
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 50px
+  &__box
+    max-width: 760px
+  &__title
+    font-size: 65px
+    font-style: normal
+    font-weight: 800
+    line-height: 120%
+    margin-bottom: 40px
+  &__subtitle
+    font-weight: 600
+    font-size: 24px
+  &__form
+    border-radius: 10px
+    background: rgba(245, 245, 245, 0.75)
+    backdrop-filter: blur(0.5px)
+    padding: 70px 40px 55px
+    width: 100%
+    max-width: 680px
+    &__title
+      color: #070713
+      font-size: 35px
+      font-style: normal
+      font-weight: 700
+      line-height: 120%
+      text-align: center
+      margin-bottom: 45px
+    &__row
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      gap: 30px 20px
+      margin-bottom: 40px
+    &__button
+      max-width: none
+  &__input-group
+    width: calc(50% - 10px)
+  &-second
+    background: url('../img/main/bg-second.jpg') no-repeat center/cover
+    &__title
+      font-size: 50px
+      &__up
+        color: #F46B25
+      &__line
+        color: #0372E5

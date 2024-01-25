@@ -1,0 +1,46 @@
+.advantages
+  margin-bottom: 120px
+  &__title
+    margin-bottom: 80px
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+    gap: 30px
+    align-items: center
+  &__box
+    margin-left: auto
+    width: 100%
+    max-width: 450px
+    display: flex
+  &__wrap
+    position: relative
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-width: none
+    &--1
+      position: relative
+      z-index: 2
+    &--2
+      position: absolute
+      left: -120px
+      bottom: 7px
+      z-index: 1
+      transform: rotate(-30deg)
+      //transform-origin: left bottom
+  &__card
+    max-width: 720px
+  &__text
+    margin-bottom: 20px
+    span
+      font-weight: 700
+    &:last-child
+      margin-bottom: 0
+  &__footer
+    font-size: 25px
+    font-style: normal
+    font-weight: 700
+    line-height: 120%

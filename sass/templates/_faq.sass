@@ -1,0 +1,57 @@
+.faq
+  margin-bottom: 120px
+  &__title
+    margin-bottom: 100px
+  &__item
+    width: 100%
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+    &--active
+      .faq__item__logo::after
+        height: 0
+      .faq__item__content
+        padding: 20px 40px 5px
+        height: auto
+        opacity: 1
+    &__header
+      border-radius: 10px
+      background: #FFF
+      box-shadow: 0 0 5px 0 rgba(21, 16, 36, 0.15)
+      padding: 20px 40px
+      font-size: 25px
+      font-style: normal
+      font-weight: 700
+      line-height: 120%
+      display: flex
+      justify-content: space-between
+      gap: 20px
+      align-items: center
+      cursor: pointer
+    &__logo
+      width: 40px
+      min-width: 40px
+      height: 40px
+      border-radius: 50%
+      background: #0372E5
+      position: relative
+      &::before, &::after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 21px
+        height: 2px
+        border-radius: 1px
+        background: #fff
+        transition: 0.3s
+      &::after
+        width: 2px
+        height: 21px
+    &__content
+      transition: 0.3s
+      height: 0
+      overflow: hidden
+      opacity: 0
+      padding: 0 40px
